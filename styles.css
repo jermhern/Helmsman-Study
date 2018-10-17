@@ -54,6 +54,7 @@ a {
 /*Class for the navigation of the book*/
 .nav {
 	color: black;
+	margin: 0 25% 0 25%;
 }
 
 .extra {
