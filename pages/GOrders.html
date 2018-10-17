@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Helmsman - USCG</title>
+	<link rel="stylesheet" type="text/css" href="../styles.css">
+</head>
+
+<body>
+	<div class="top">
+		<a href="../index.html"><img id="logo" src="../items/USCG.png"></a>
+		<h1> The Helmsman Study Guide </h1>
+	</div>
+
+	<h1>General Orders</h1>
+	<div id="line"></div>
+
+	<button onclick="startGame()">Game</button>
+	<button onclick="displayList()">List</button>
+
+	<div id="game"></div>
+	<div id="orderNumber"></div>
+	<div id="guessField"></div>
+	<div id="result"></div>
+	<div id="button"></div>
+
+	<div id="list"></div>
+
+	<script type="text/javascript">
+	/* eslint-disable */
+	function startGame() {
+
+		// empties previous data from screen (if any)
+		if (document.getElementById('list').innerHTML === '') {
+			console.log('Nothing was cleared.');
+		} else {
+			document.getElementById('list').innerHTML = '';
+			document.getElementById('guessField').innerHTML = '';
+			document.getElementById('orderNumber').innerHTML = '';
+			document.getElementById('result').innerHTML = '';
+			document.getElementById('button').innerHTML = '';
+		}
+
+		// buiild list of General Orders
+		const orders = ['To take charge of this post and all government property in view.','To walk my post in a military manner, keeping always on the alert, and observing everything that takes place within sight or hearing.', 'To report all violations not covered by instructions.', 'To repeat all calls from posts more distant from the guard house than my own.', 'To quit my post only when properly relieved.', 'To recieve, obey, and pass onto the sentry who relieves me of all orders from the commanding officer, field officer of the day, officer of the day, and officers and petty officers of the watch.','To talk to no one except in the line of duty.', 'To give the alarm in case of fire or disorder.', 'To call the petty officer of the watch in any case not covered by instructions.', 'To salute all officers and standards not cased.', 'To be especially watchful at night, and during the time for challenging, to challenge all persons on or near my post, and to allow no one to pass without proper authority.'];
+
+		// Print general instructions
+		document.getElementById('game').innerHTML = '<h1>General Orders - game</h1> <p>You will be given a general order, by random. You will need to type it out word for word. You will be given one chance. Once you want to move on click \'New Order\'.<br><br><i>Scroll Below!</i></p>';
+
+		// Pick an order with a random index
+		let randNum = Math.floor(Math.random() * 11);
+		let randOrder = orders[randNum];
+
+		// Fix array offset
+		let nonArrRandNum = randNum + 1;
+		
+		// Fill the cooresponding div with information
+		// Show order number needed for guessing
+		document.getElementById('orderNumber').innerHTML = '<h1>' + nonArrRandNum + '</h1>';
+
+		// Use a textform for the data entry
+		document.getElementById('guessField').innerHTML = '<input type="text" id="answer">';
+
+		// Use a button with an event listener to check the data in form
+		document.getElementById('button').innerHTML = '<button>Submit</button>';
+		document.getElementById('button').addEventListener('click', check);
+		
+		// This function checks the current correctOrder and text field data
+		function check() {
+			// Use correctOrder to check against the data in text field
+			let correctOrder = randOrder;
+			let enteredOrder = document.getElementById('answer').value;
+
+			if (enteredOrder === correctOrder) {
+				document.getElementById('result').innerHTML = '<h1 style="color: green;">Correct</h1><button onclick="startGame()">New order</button>';
+			} else {
+				document.getElementById('result').innerHTML = '<h1 style="color: red;">Incorrect: ' + correctOrder +'</h1><button onclick="startGame()">New order</button>';
+				}
+
+		}
+	}
+
+	// Simple function to display the list of the page
+	function displayList() {
+		// empties previous data from screen (if any)
+		if (document.getElementById('game').innerHTML === '') {
+			console.log('Nothing was cleared.');
+		} else {
+			document.getElementById('game').innerHTML = '';
+			document.getElementById('guessField').innerHTML = '';
+			document.getElementById('orderNumber').innerHTML = '';
+			document.getElementById('result').innerHTML = '';
+			document.getElementById('button').innerHTML = '';
+		}
+
+		const listHtml = '<h1>General Orders - list</h1> <ol><li>To take charge of this post and all government property in view.</li><li>To walk my post in a military manner, keeping always on the alert, and observing everything that takes place within sight or hearing.</li><li>To report all violations of orders I am instructed to enforce.</li><li>To repeat all calls from posts more distant from the guard house than my own</li><li>To quit my post only when properly relieved.</li><li>To recieve, obey, and pass onto the sentry who relieves me of all orders from the commanding officer, field officer of the day, officer of the day, and officers and petty officers of the watch.</li><li>To talk to no one except in the line of duty</li><li>To give the alarm in case of fire or disorder.</li><li>To call the petty officer of the watch in any case not covered by instructions.</li><li>To salute all officers and standards not cased.</li><li>To be especially watchful at night, and during the time for challenging, to challenge all persons on or near my post and to allow no one to pass without proper authority.</li></ol>';
+		document.getElementById('list').innerHTML = listHtml;
+	}
+	</script>
+	
+
+	<div class="owner">
+		<h1> Created by a future member of the USCG studying for BC, <a style="color: white;" href="https://jermhern.github.io/Portfolio-June/">Jeremy Hernandez.</a> <br>All images belong to thier respective owners.</h1>
+	</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/*Using font used in the USCG Logo*/
+@font-face {
+	font-family: 'USCG-Font';
+	src: url(items/USCG-Font.TTF);
+}
+
+body {
+	text-align: center;
+	font-family: 'USCG-Font';
+}
+
+a {
+	text-decoration: none;
+	color: #084482;
+	font-style: italic;
+}
+
+/*Size of logo */
+#logo {
+	width: 20%;
+	height: 20%;
+}
+
+/*Literally just a line*/
+#line {
+	border-bottom-width: 100px;
+	border-bottom: 2px solid black;
+}
+
+/*design of list option*/
+#list {
+	font-size: 1.5em;
+	margin: 0 25% 0 25%;
+	text-align: center; 
+}
+
+#list li {
+	padding: 10px;
+}
+
+/*design for the vocabular section*/
+#vocab-list {
+	text-align: left;
+	margin: 0 25% 0 25%;
+	font-size: 1.5em;
+} 
+
+/*desgin of game option*/
+#game {
+	font-size: 1.5em;
+	margin: 0 25% 0 25%;
+}
+
+/*Class for the navigation of the book*/
+.nav {
+	color: black;
+}
+
+.extra {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*the footer of every page*/ 
+.owner {
+	font-size: .5em;
+	padding: 2%;
+	width: 50%;
+
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+
+	color: white;
+	background-color: #084482;
+}
+
+/*dimensions to help fit boats on table*/
+#boats img {
+	width: 70%;
+	height: 20%;
+}
+
+#uniforms img {
+	height: 300px;
+}
+
+/*button style*/
+button {
+	font-size: 1.5em;
+	margin-top: 3%;
+	height: 30%;
+	width: 20%;
+}
+
+/*input style */
+input {
+	height: 100px;
+	width: 50%;
+	border-color: grey;
+	font-size: 1.5em;
+}
+
+/*table style*/
+table {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: grey;
+	width: 70%;
+}
+
+table th {
+	padding: 1%;
+	background-color: #777;
+}
+
+table img {
+	height: 140px;
+	width: 130px;
+	background-color: white;
+}
+

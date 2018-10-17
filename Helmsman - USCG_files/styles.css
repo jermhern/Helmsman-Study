@@ -1,0 +1,54 @@
+/*Using font used in the USCG Logo*/
+@font-face {
+	font-family: 'USCG-Font';
+	src: url(items/USCG-Font.TTF);
+}
+
+body {
+	text-align: center;
+	font-family: 'USCG-Font';
+}
+
+/*Size of logo */
+#logo {
+	width: 20%;
+	height: 20%;
+}
+
+/*Literally just a line*/
+#line {
+	border-bottom-width: 100px;
+	border-bottom: 2px solid black;
+}
+
+/*design of list option*/
+#list {
+	font-size: 1.5em;
+	margin: 0 25% 0 25%;
+	text-align: center; 
+}
+
+#list li {
+	padding: 10px;
+}
+
+/*desgin of game option*/
+#game {
+	font-size: 1.5em;
+	margin: 0 25% 0 25%;
+}
+
+/*Class for the navigation of the book*/
+.nav {
+	color: black;
+}
+
+/*button style*/
+button {
+	font-size: 2em;
+	margin-top: 3%;
+	height: 30%;
+	width: 10%;
+}
+
+
