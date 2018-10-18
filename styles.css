@@ -133,10 +133,14 @@ table img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	table img {
-	width: 95%;
-	height: 30%;
-	background-color: white;
+		table img {
+		width: 95%;
+		height: 30%;
+		background-color: white;
+	}
+		#logo {
+		width: 45%;
+		height: 45%;
 	}
 }
 
