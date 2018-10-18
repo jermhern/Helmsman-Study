@@ -51,6 +51,11 @@ a {
 	text-align: center;
 }
 
+#rank-list img {
+	width: 25%;
+	height: 40%;
+}
+
 /*design for the vocabular section*/
 #vocab-list {
 	text-align: left;
@@ -138,6 +143,16 @@ table img {
 		height: 30%;
 		background-color: white;
 	}
+	#rank-list img {
+	width: 55%;
+	height: 40%;
+	}
 }
 
+@media screen and (min-width: 1024px) {
+	#rank-list img {
+	width: 50%;
+	height: 80%;
+	}
+}
 
