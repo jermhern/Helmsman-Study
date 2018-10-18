@@ -85,7 +85,7 @@ a {
 .owner {
 	font-size: .5em;
 	padding: 2%;
-	width: 50%;
+	width: 90%;
 
 	margin-top: 2%;
 	margin-left: auto;
@@ -138,21 +138,42 @@ table img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 567px) {
-		table img {
+	table img {
 		width: 95%;
 		height: 30%;
 		background-color: white;
 	}
 	#rank-list img {
-	width: 55%;
-	height: 40%;
+		width: 55%;
+		height: 40%;
+	}
+	#logo {
+		width: 25%;
+		height: 25%;
+	}
+}
+
+@media screen and (min-width: 568px) and (max-width: 1023px) {
+	.owner {
+		width: 70%;
+	}
+	#logo {
+		width: 20%;
+		height: 20%;
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	#rank-list img {
-	width: 50%;
-	height: 85%;
+		width: 50%;
+		height: 85%;
+	}
+	.owner {
+		width: 70%;
+	}
+	#logo {
+		width: 20%;
+		height: 20%;
 	}
 }
 
