@@ -101,6 +101,10 @@ a {
 	height: 300px;
 }
 
+#addressing-list {
+	margin: 0 15% 0 15%;
+}
+
 /*button style*/
 button {
 	font-size: 1.5em;
