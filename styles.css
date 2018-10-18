@@ -165,12 +165,16 @@ table img {
 		width: 20%;
 		height: 20%;
 	}
+	#rank-list img {
+		width: 35%;
+		height: 55%;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	#rank-list img {
-		width: 50%;
-		height: 85%;
+		width: 30%;
+		height: 65%;
 	}
 	.owner {
 		width: 70%;
