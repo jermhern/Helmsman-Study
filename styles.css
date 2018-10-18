@@ -45,6 +45,12 @@ a {
 	text-align: center;
 }
 
+#rank-list {
+	font-size: 1em;
+	margin: 0 15% 0 15%;
+	text-align: center;
+}
+
 /*design for the vocabular section*/
 #vocab-list {
 	text-align: left;
