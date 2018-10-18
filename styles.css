@@ -92,8 +92,8 @@ a {
 
 /*dimensions to help fit boats on table*/
 #boats img {
-	width: 70%;
-	height: 20%;
+	width: 200px;
+	height: 100px;
 }
 
 #uniforms img {
@@ -131,7 +131,8 @@ table th {
 }
 
 table img {
-	height: 50%;
+	width: 95%;
+	height: 30%;
 	background-color: white;
 }
 
