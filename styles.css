@@ -91,10 +91,6 @@ a {
 }
 
 /*dimensions to help fit boats on table*/
-#boats img {
-	width: 200px;
-	height: 100px;
-}
 
 #uniforms img {
 	height: 300px;
@@ -131,16 +127,16 @@ table th {
 }
 
 table img {
-	width: 95%;
-	height: 30%;
+	width: 75%;
+	height: 45%;
 	background-color: white;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	/*Size of logo */
-	#logo {
-		width: 100px;
-		height: 100px;
+	table img {
+	width: 95%;
+	height: 30%;
+	background-color: white;
 	}
 }
 
